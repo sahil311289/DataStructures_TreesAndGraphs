@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NodesAtALevel {
+public class NodesAtALevel_Recursive {
     public static void main(String[] args) {
         Tree tree = new Tree();
         Node root = tree.createTree();
