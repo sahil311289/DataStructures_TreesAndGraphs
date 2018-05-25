@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 // Given a sorted array with unique ints, wap to create BST with minimal height
-public class MinimalTree {
+public class CreateMinimalBST {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int arLen = scan.nextInt();
