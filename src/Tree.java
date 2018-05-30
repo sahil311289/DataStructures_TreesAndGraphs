@@ -1,12 +1,18 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Node{
     int data;
     Node left;
     Node right;
 
+    public Node() {
+        left = right = null;
+    }
+
     public Node(int data) {
         this.data = data;
-        left = null;
-        right = null;
+        left = right = null;
     }
 }
 
@@ -23,5 +29,23 @@ public class Tree {
         root.right.right = new Node(7);
 
         return root;
+    }
+
+    public void displayTree(Node root) {
+        if(root == null) {
+            return;
+        }
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()) {
+            Node del = q.remove();
+            System.out.println(del.data);
+            if(del.left != null) {
+                q.add(del.left);
+            }
+            if(del.right != null) {
+                q.add(del.right);
+            }
+        }
     }
 }
