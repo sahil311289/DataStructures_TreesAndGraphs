@@ -37,8 +37,10 @@ public class Tree {
         root.right = new Node(5);
         root.left.right = new Node(6);
         root.right.left = new Node(9);
+        root.right.right = new Node(3);
         root.left.right.left = new Node(1);
         root.left.right.right = new Node(11);
+        root.right.left.right = new Node(8);
         root.right.right.left = new Node(4);
 
         return root;
