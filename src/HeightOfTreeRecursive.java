@@ -1,4 +1,4 @@
-public class HieghtOfTreeRecursive {
+public class HeightOfTreeRecursive {
     public static void main(String[] args) {
         Tree t = new Tree();
         Node root = t.createTree2();
