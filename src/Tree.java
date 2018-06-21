@@ -5,6 +5,7 @@ class Node{
     int data;
     Node left;
     Node right;
+    int depth;
 
     public Node() {
         left = right = null;
